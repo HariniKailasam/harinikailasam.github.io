@@ -1,1 +1,662 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}.resume{max-width:900px;margin-inline:auto;padding-block:clamp(36px,6vw,72px)}
+.resume h1{font-size:clamp(36px,6vw,60px);font-weight:800;margin:8px 0 6px}
+.resume .role{font:700 14px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.resume h2{font:700 13px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:34px 0 12px;padding-top:22px;border-top:1px solid var(--line)}
+.resume .job{margin:0 0 18px}.resume .job b{display:block}.resume .job small{color:var(--muted)}
+.resume ul{margin:6px 0 0 18px}.resume li{margin:4px 0}
+.resume .two{display:grid;grid-template-columns:1fr 1fr;gap:20px 40px}
+@media(max-width:700px){.resume .two{grid-template-columns:1fr}}
+</style>
+<title>Harini Kailasam · UX/UI Designer Portfolio</title>
+<meta name="description" content="Harini Kailasam is an ex-architect turned UX/UI designer. Research-led case studies across e-commerce, productivity, wellness and food, from interviews and testing to high-fidelity prototypes.">
+<meta name="theme-color" content="#FFFAF2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Harini Kailasam · Ex-architect turned UX designer">
+<meta property="og:description" content="I design how people move through products. Case studies in UX research, usability testing and UI design.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Harini Kailasam · Ex-architect turned UX designer">
+<meta name="twitter:description" content="I design how people move through products. Case studies in UX research, usability testing and UI design.">
 
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 2C49 2 62 15 62 32S49 62 32 62 2 49 2 32V8a6 6 0 0 1 6-6z' fill='%23B8481F'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='700' text-anchor='middle' fill='white'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap">
+</head><body>
+<style>
+/* Layout: one page, hash-routed. Sticky nav, big editorial hero, color-coded case studies, consistent story order. */
+:root{
+  --bg:#FFFAF2; --surface:#FFFFFF; --ink:#26182B; --muted:#6B5E70; --line:#EADFD3;
+  --terracotta:#B8481F; --sage:#3F6B3F; --lavender:#9C7FC9; --sun:#F5C84C; --plum:#3A1F4A; --blue:#4C7BE8;
+  --tint-terracotta:#FCE6DA; --tint-sage:#E3EEDF; --tint-lavender:#EBE3F7; --tint-sun:#FDF1CC; --tint-blue:#E1E9FC;
+  --on-plum:#FFF6EA;
+  --tint-orange:#FFE9CF;
+  --c-modulo:#B8481F; --c-lunchbox:#8A6200; --c-trove:#B15A00; --c-newglow:#6C48B0; --c-veggie:#2F6B3A; --c-research:#2B59C6;
+  --display:'Playfair Display',Georgia,serif; --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --c:var(--terracotta); --ct:var(--tint-terracotta);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#191120; --surface:#241830; --ink:#F7EEE6; --muted:#B9ABC0; --line:#3A2A48;
+  --tint-terracotta:#432A24; --tint-sage:#22342A; --tint-lavender:#32264A; --tint-sun:#403618; --tint-blue:#1F2B4A;
+  --plum:#2C1840; --tint-orange:#44301A; --c-modulo:#F29B7A; --c-lunchbox:#F5C84C; --c-trove:#FFB04D; --c-newglow:#C2A8F0; --c-veggie:#8FD08A; --c-research:#93B3FF; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#191120; --surface:#241830; --ink:#F7EEE6; --muted:#B9ABC0; --line:#3A2A48;
+  --tint-terracotta:#432A24; --tint-sage:#22342A; --tint-lavender:#32264A; --tint-sun:#403618; --tint-blue:#1F2B4A;
+  --plum:#2C1840; --tint-orange:#44301A; --c-modulo:#F29B7A; --c-lunchbox:#F5C84C; --c-trove:#FFB04D; --c-newglow:#C2A8F0; --c-veggie:#8FD08A; --c-research:#93B3FF; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0;max-width:66ch}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto}
+img{display:block;max-width:100%;height:auto}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);
+  margin-inline:calc(-1*max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{font:800 22px/1 var(--display);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:34px;height:34px;border-radius:50% 50% 50% 12%;background:var(--terracotta);display:grid;place-items:center;color:#fff;font:700 17px var(--display);font-style:normal}
+.nav nav{display:flex;gap:6px;align-items:center}
+.nav nav a{text-decoration:none;font-weight:600;font-size:15px;padding:8px 14px;border-radius:99px}
+.nav nav a:hover{background:var(--tint-sun)}
+.nav nav a[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.theme{display:grid;place-items:center;padding:0;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:16px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 16px var(--body);padding:14px 24px;border-radius:99px;background:var(--terracotta);color:#fff;text-decoration:none;border:2px solid var(--terracotta);cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-3px) rotate(-1deg)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* hero */
+.hero{padding-block:clamp(24px,4vw,48px) clamp(20px,3vw,32px);display:grid;grid-template-columns:1.45fr .55fr;gap:clamp(24px,4vw,56px);align-items:center}
+.hero>*{min-width:0}
+.kicker{font:700 13px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.hero h1{font-size:clamp(34px,5.2vw,62px);font-weight:800;margin:16px 0 18px}
+.hero h1 em{font-style:italic;color:var(--terracotta)}
+.hero h1 span{background:linear-gradient(transparent 62%,var(--sun) 62%)}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);margin-bottom:24px}
+.portrait{position:relative;justify-self:center;width:min(100%,320px);max-width:calc(100% - 40px)}
+.portrait::before{content:"";position:absolute;inset:-5% -8% -6% 10%;background:var(--sun);border-radius:48% 52% 44% 56%/52% 44% 56% 48%;z-index:0}
+.portrait::after{content:"";position:absolute;width:34%;aspect-ratio:1;left:-10%;bottom:6%;background:var(--lavender);border-radius:50%;z-index:0}
+.portrait img{position:relative;z-index:1;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:44% 44% 24px 24px/34% 34% 24px 24px;border:4px solid var(--surface)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{font:600 13px var(--body);padding:6px 14px;border-radius:99px;background:var(--ct);color:var(--ink)}
+.chip.sage{background:var(--tint-sage)}.chip.lav{background:var(--tint-lavender)}.chip.sun{background:var(--tint-sun)}.chip.blue{background:var(--tint-blue)}
+
+/* sections */
+section.block{padding-block:clamp(40px,6vw,76px)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.sec-head h2{font-size:clamp(30px,4.5vw,48px)}
+.sec-head p{color:var(--muted)}
+
+/* featured */
+.feature{display:grid;grid-template-columns:1fr 1fr;border-radius:32px;overflow:hidden;background:var(--terracotta);color:#fff;text-decoration:none;transition:transform .25s}
+.feature:hover{transform:translateY(-6px)}
+.feature>*{min-width:0}
+.feature .txt{padding:clamp(24px,4vw,56px);display:flex;flex-direction:column;gap:16px;justify-content:center}
+.feature h3{font-size:clamp(34px,5vw,56px)}
+.feature .tag{font:700 12px var(--body);letter-spacing:.14em;text-transform:uppercase;background:#fff;color:#8A3A15;border-radius:99px;padding:6px 14px;width:max-content}
+.feature p{color:#FFEFE6}
+.feature .go{font-weight:700;display:inline-flex;gap:8px}
+.feature .art{background:#FFE9DC;display:flex;gap:14px;align-items:flex-end;justify-content:center;padding:28px 24px 0}
+.feature .art img{border-radius:16px 16px 0 0;width:44%;box-shadow:0 10px 30px #0003}
+.feature .art img.w{width:62%}
+
+/* grid cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:22px}
+.g5{grid-template-columns:repeat(6,1fr)}.g5 .card{grid-column:span 2}.g5 .card:nth-child(n+4){grid-column:span 3}
+@media (max-width:1000px){.g5{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}.g5 .card,.g5 .card:nth-child(n+4){grid-column:auto}}
+.card{display:flex;flex-direction:column;background:var(--ct);border-radius:28px;overflow:hidden;text-decoration:none;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px) rotate(-.6deg);box-shadow:0 18px 40px #0002}
+.card .thumb{height:260px;display:flex;justify-content:center;align-items:flex-end;gap:12px;padding:24px 20px 0;overflow:hidden}
+.card .thumb img{border-radius:14px 14px 0 0;height:100%;width:auto;object-fit:cover;object-position:top;box-shadow:0 8px 24px #0002;max-width:48%}
+.card .thumb img.w{max-width:100%;height:auto;width:92%;align-self:center;border-radius:12px}
+.card .body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;background:var(--surface);flex:1}
+.card h3{font-size:26px}
+.card p{color:var(--muted);font-size:15.5px}
+.card .more{margin-top:auto;padding-top:6px;font-weight:700;color:var(--c)}
+.note{margin-top:28px;padding:18px 22px;border-radius:20px;background:var(--tint-sun);font-size:15px}
+
+/* about strip */
+.strip{background:var(--plum);color:var(--on-plum);border-radius:36px;padding:clamp(28px,5vw,60px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.strip>*{min-width:0}
+.strip h2{font-size:clamp(30px,4vw,44px)}
+.strip p{color:#E6D7EE;margin-top:14px}
+.strip .btn{margin-top:22px;background:var(--sun);border-color:var(--sun);color:#2A1830}
+
+/* case study */
+.cs-hero{padding-block:clamp(32px,5vw,60px) 28px}
+.back{font-weight:600;text-decoration:none;color:var(--muted);display:inline-block;margin-bottom:22px}
+.back:hover{color:var(--c)}
+.cs-hero h1{font-size:clamp(40px,7vw,80px);font-weight:800;margin:12px 0 14px}
+.cs-hero p.lead{font-size:clamp(18px,2.3vw,23px);color:var(--muted)}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-top:30px;padding:22px 26px;background:var(--ct);border-radius:24px}
+.meta b{display:block;font:700 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--c);margin-bottom:4px}
+.meta span{font-weight:500;font-size:15.5px;line-height:1.45;display:block}
+.cover{border-radius:32px;background:var(--ct);padding:clamp(18px,3vw,36px);display:flex;gap:clamp(10px,2vw,22px);justify-content:center;align-items:flex-end;overflow:hidden;margin-block:22px 8px}
+.cover img{border-radius:18px;box-shadow:0 14px 34px #0002;min-width:0}
+.cover.multi img{flex:0 1 var(--w,auto);width:auto;height:auto}
+.step{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,56px);padding-block:clamp(30px,5vw,56px);border-top:1px solid var(--line)}
+.step>*{min-width:0}
+.step .label{font:700 12px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--c);margin-bottom:10px}
+.step h2{font-size:clamp(26px,3.4vw,38px);margin-bottom:14px}
+.step p+p{margin-top:12px}
+.step ul{margin:12px 0 0;padding-left:20px;display:grid;gap:6px}
+.step li::marker{color:var(--c)}
+.step.full{grid-template-columns:1fr;gap:26px}
+.step.full>div:first-child{max-width:760px}
+.fig{margin:0;display:grid;gap:10px;align-content:start}
+.fig img{border-radius:20px;border:1px solid var(--line);background:var(--surface);width:auto;max-width:100%;margin-inline:auto}
+.fig figcaption{font-size:14px;color:var(--muted)}
+.phones{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;align-items:flex-start}
+.phones img{width:calc(33.3% - 10px);min-width:130px;border-radius:22px;border:1px solid var(--line);box-shadow:0 10px 26px #0002;background:var(--surface)}
+.phones.two img{width:calc(50% - 8px)}
+.phones.four img{width:calc(25% - 11px);min-width:120px}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:20px}
+.stat div{background:var(--ct);border-radius:20px;padding:16px 18px}
+.stat b{display:block;font:800 34px/1 var(--display);color:var(--c)}
+.stat span{font-size:14px;color:var(--muted)}
+.quote{margin-top:18px;padding:18px 22px;border-radius:20px;background:var(--ct);font:italic 600 20px/1.4 var(--display)}
+.quote small{display:block;font:500 13px var(--body);font-style:normal;color:var(--muted);margin-top:8px}
+.insights{display:grid;gap:12px}
+.insights>div{background:var(--ct);border-radius:20px;padding:18px 22px}
+.insights b{font:800 14px var(--body);letter-spacing:.1em;color:var(--c)}
+.insights h3{font-size:22px;margin:4px 0 6px}
+.insights p{font-size:15.5px;color:var(--muted)}
+.learn{background:var(--ink);color:var(--bg);border-radius:32px;padding:clamp(26px,4vw,48px);margin-block:30px 10px}
+.learn h2{font-size:clamp(26px,3.4vw,38px);margin-bottom:16px}
+.learn ul{margin:0;padding-left:20px;display:grid;gap:10px}
+.learn li::marker{color:var(--sun)}
+.pager{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px;padding-block:30px 60px}
+.pager a{padding:22px 26px;border-radius:24px;background:var(--surface);border:1px solid var(--line);text-decoration:none;display:grid;gap:4px;transition:transform .2s}
+.pager a:hover{transform:translateY(-4px)}
+.pager small{font:700 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.pager b{font:700 24px var(--display)}
+
+/* about / contact */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,64px);padding-block:clamp(36px,6vw,72px);align-items:start}
+.about>*{min-width:0}
+.about h1{font-size:clamp(36px,6vw,64px);font-weight:800;margin:10px 0 20px}
+.about p+p{margin-top:16px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.facts{display:grid;gap:22px;margin-top:34px}
+.facts h3{font:700 13px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.contact{padding-block:clamp(40px,7vw,90px);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,60px);align-items:center}
+.contact>*{min-width:0}
+.contact h1{font-size:clamp(40px,7vw,80px);font-weight:800;margin:12px 0 20px}
+.mailbox{background:var(--tint-sun);border-radius:32px;padding:clamp(24px,4vw,40px);display:grid;gap:16px}
+.mailbox code{font:600 clamp(16px,2.6vw,21px) var(--body);background:var(--surface);border:2px dashed var(--ink);border-radius:16px;padding:16px 18px;overflow-wrap:anywhere;user-select:all;display:block}
+
+footer{padding-block:34px 44px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+
+.fig img,.phones img,.cover img{cursor:zoom-in}
+.fig{position:relative}
+.fig::after{content:"Click to enlarge";position:absolute;top:10px;right:10px;font:600 12px var(--body);padding:5px 10px;border-radius:99px;background:rgba(38,24,43,.82);color:#fff;pointer-events:none;opacity:.9}
+@media (hover:none){.fig::after{content:"Tap to enlarge"}}
+/* hero extras */
+.avail{display:inline-flex;align-items:center;gap:8px;font:600 14px var(--body);padding:6px 14px;border-radius:99px;background:var(--tint-sage);color:var(--ink);margin-top:18px}
+.avail i{width:9px;height:9px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 4px color-mix(in srgb,var(--sage) 25%,transparent)}
+.proof{display:flex;flex-wrap:wrap;gap:10px 30px;margin-top:26px}
+.hero h1 em{white-space:nowrap}
+.proof div{display:grid;gap:2px}
+.proof b{font:800 30px/1 var(--display);color:var(--terracotta)}
+.proof span{font-size:13.5px;color:var(--muted)}
+.row .btn.text{background:transparent;border-color:transparent;color:var(--ink);text-decoration:underline;text-underline-offset:4px;padding-inline:10px}
+.peek{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-bottom:10px}
+.peek a{display:flex;gap:14px;align-items:center;padding:12px 16px 12px 12px;border-radius:20px;background:var(--surface);border:1px solid var(--line);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.peek a:hover{transform:translateY(-3px);box-shadow:0 10px 24px #0001}
+.peek img{width:68px;height:68px;flex:none;object-fit:cover;object-position:top;border-radius:14px;background:var(--ct)}
+.peek small{display:block;font:700 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.peek b{display:block;font:700 19px/1.2 var(--display)}
+.peek span{display:block;font-size:13.5px;color:var(--muted);line-height:1.35;margin-top:2px}
+.nav nav a.navresume{border:1.5px solid var(--ink)}
+.nav nav a.navresume:hover{background:var(--ink);color:var(--bg)}
+/* case study extras */
+.glance{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.glance>div{padding:20px 24px}
+.glance>div+div{border-left:1px solid var(--line)}
+.glance b{display:block;font:700 12px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--c);margin-bottom:6px}
+.glance p{font-size:15.5px;line-height:1.5;max-width:none}
+.acts{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch;margin-top:16px}
+.acts .btn{background:var(--c);border-color:var(--c)}
+.rel{display:grid;gap:2px;padding:12px 20px;border-radius:20px;border:1px dashed var(--c);text-decoration:none;max-width:560px}
+.rel small{font:700 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.rel b{font:700 18px var(--display)}
+.rel span{font-size:14.5px;color:var(--muted)}
+.hint{font-size:13.5px;color:var(--muted);margin:10px 0 0;text-align:center;max-width:none}
+details.more{border-top:1px solid var(--line)}
+details.more>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 24px;margin-block:20px;border-radius:22px;background:var(--ct);font-size:15.5px}
+details.more>summary::-webkit-details-marker{display:none}
+details.more>summary b{font:700 20px var(--display);display:block;margin-bottom:2px}
+details.more>summary span{color:var(--muted)}
+details.more>summary i{font:700 14px var(--body);font-style:normal;padding:8px 16px;border-radius:99px;background:var(--surface);border:1px solid var(--line);white-space:nowrap}
+details.more>summary i::before{content:"Show"}
+details.more[open]>summary i::before{content:"Hide"}
+details.more>.step:first-of-type{border-top:0}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+.cmp>div{border-radius:20px;padding:18px;background:var(--surface);border:1px solid var(--line);display:grid;gap:8px;justify-items:start}
+.cmp .sw{font:600 16px var(--body);padding:12px 22px;border-radius:99px;color:#fff}
+.cmp b{font:800 26px/1 var(--display)}
+.cmp .bad b{color:#B3261E}.cmp .good b{color:#1E6B3A}
+.cmp small{font-size:13.5px;color:var(--muted)}
+.map{display:grid;gap:10px}
+.map .pair{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;padding:14px 18px;border-radius:18px;background:var(--surface);border:1px solid var(--line)}
+.map .pair i{font-style:normal;color:var(--terracotta);font-weight:700}
+.map .pair span:first-child{color:var(--muted)}
+.map .pair span:last-child{font-weight:600}
+.strip .map .pair{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18)}
+.strip .map .pair span:first-child{color:#E6D7EE}
+.strip .map .pair span:last-child{color:#fff}
+.strip .map .pair i{color:var(--sun)}
+.strip h3.mini{font:700 13px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--sun);margin-bottom:12px}
+.btn.sm{padding:10px 18px;font-size:15px}
+#msg{margin-top:4px;font-size:14.5px;color:var(--muted);min-height:1.4em}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+#app:focus{outline:0}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(20,10,28,.92);display:flex;flex-direction:column;padding:max(12px,env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-right,0px)) max(12px,env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px))}
+.lb[hidden]{display:none}
+.lb .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#fff;font:600 14px var(--body);padding-bottom:10px}
+.lb button{font:600 15px var(--body);padding:10px 18px;border-radius:99px;border:0;background:#fff;color:#26182B;cursor:pointer}
+.lb .stage{flex:1;overflow:auto;display:grid;place-items:start center;min-height:0}
+.lb img{max-width:none;width:auto;height:auto;border-radius:12px;background:#fff;cursor:zoom-out}
+.lb img.fit{max-width:100%;max-height:100%;cursor:zoom-in}
+@media (max-width:820px){
+  .hero,.feature,.strip,.step,.about,.contact{grid-template-columns:1fr}
+  .portrait{order:0;width:min(55%,230px)}
+  .peek{grid-template-columns:1fr}
+  .proof{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
+  .glance{grid-template-columns:1fr}.glance>div+div{border-left:0;border-top:1px solid var(--line)}
+  .cmp{grid-template-columns:1fr}
+  .cover.multi{flex-wrap:nowrap}
+  .cover.multi img{height:auto!important;width:0;flex:var(--ar,.5) 1 0}
+  .nav nav a.navresume{display:none}
+  .nav nav a{padding:8px 10px;font-size:14px}
+  .logo span{display:none}
+  .feature .art{padding-top:24px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#home" aria-label="Harini Kailasam, home"><i>H</i><span>Harini Kailasam</span></a>
+  <nav aria-label="Main">
+    <a href="#work" data-nav="work">Work</a>
+    <a href="#about" data-nav="about">About</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+    <a class="navresume" id="navResume" href="#contact">Resume</a>
+    <button class="theme" id="theme" aria-label="Switch light or dark theme" title="Switch theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18" /><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+  </nav>
+</div></header>
+<main id="app" class="wrap" tabindex="-1"></main>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Image viewer"><div class="bar"><span id="lbcap"></span><button type="button" id="lbx">Close</button></div><div class="stage"><img id="lbimg" alt=""></div></div>
+<div class="wrap"><footer><span>© 2026 Harini Kailasam · UX/UI Designer</span><span>Concept projects. Photos and product imagery in mockups are illustrative placeholders.</span></footer></div>
+
+<script>var IMG={"harini-hero": "img/harini-hero.jpg", "harini": "img/harini.jpg", "lb-board-v1": "img/lb-board-v1.webp", "lb-board-v2": "img/lb-board-v2.webp", "lb-lofi-smart": "img/lb-lofi-smart.webp", "lb-lofi-today": "img/lb-lofi-today.webp", "lb-s03": "img/lb-s03.webp", "lb-s04": "img/lb-s04.webp", "lb-s10": "img/lb-s10.webp", "lb-s11": "img/lb-s11.webp", "lb-v1-add": "img/lb-v1-add.webp", "lb-v2-add": "img/lb-v2-add.webp", "lb-v2-smart": "img/lb-v2-smart.webp", "lb-v2-today": "img/lb-v2-today.webp", "lb-v2-week": "img/lb-v2-week.webp", "mo-ios-cart": "img/mo-ios-cart.webp", "mo-ios-confirm": "img/mo-ios-confirm.webp", "mo-ios-home": "img/mo-ios-home.webp", "mo-ios-pdp": "img/mo-ios-pdp.webp", "mo-ios-shop": "img/mo-ios-shop.webp", "mo-journey": "img/mo-journey.webp", "mo-lofi-cart": "img/mo-lofi-cart.webp", "mo-lofi-home": "img/mo-lofi-home.webp", "mo-lofi-pdp": "img/mo-lofi-pdp.webp", "mo-mood": "img/mo-mood.webp", "mo-mweb-hifi": "img/mo-mweb-hifi.webp", "mo-mweb-home": "img/mo-mweb-home.webp", "mo-mweb-lofi": "img/mo-mweb-lofi.webp", "mo-persona": "img/mo-persona.webp", "mo-research": "img/mo-research.webp", "mo-sitemap": "img/mo-sitemap.webp", "mo-ui-desktop": "img/mo-ui-desktop.webp", "mo-ui-library": "img/mo-ui-library.webp", "mo-ui-mobile": "img/mo-ui-mobile.webp", "mo-usability": "img/mo-usability.webp", "mo-userflow": "img/mo-userflow.webp", "mo-web-cart": "img/mo-web-cart.webp", "mo-web-home": "img/mo-web-home.webp", "mo-web-lofi": "img/mo-web-lofi.webp", "mo-web-pdp": "img/mo-web-pdp.webp", "mo-web-shop": "img/mo-web-shop.webp", "ng-analysis": "img/ng-analysis.webp", "ng-dirA": "img/ng-dirA.webp", "ng-dirB": "img/ng-dirB.webp", "ng-home": "img/ng-home.webp", "ng-journal": "img/ng-journal.webp", "ng-mood": "img/ng-mood.webp", "ng-profile": "img/ng-profile.webp", "ng-routine": "img/ng-routine.webp", "re-chart": "img/re-chart.webp","re-recs": "img/re-recs.webp","re-next": "img/re-next.webp", "re-themes": "img/re-themes.webp", "tr-ad-before": "img/tr-ad-before.webp", "tr-ad": "img/tr-ad.webp", "tr-dm": "img/tr-dm.webp", "tr-doc-access": "img/tr-doc-access.webp", "tr-doc-brand": "img/tr-doc-brand.webp", "tr-doc-components": "img/tr-doc-components.webp", "tr-doc-research": "img/tr-doc-research.webp", "tr-doc-story": "img/tr-doc-story.webp", "tr-ds-components": "img/tr-ds-components.webp", "tr-feed": "img/tr-feed.webp", "tr-inbox": "img/tr-inbox.webp", "tr-lofi-ad": "img/tr-lofi-ad.webp", "tr-lofi-feed": "img/tr-lofi-feed.webp", "tr-profile": "img/tr-profile.webp", "vb-colors": "img/vb-colors.webp",
+"vb-states": "img/vb-states.webp", "vb-hero": "img/vb-hero.webp", "vb-index": "img/vb-index.webp", "vb-m-index": "img/vb-m-index.webp", "vb-m-method": "img/vb-m-method.webp", "vb-m-post": "img/vb-m-post.webp", "vb-post": "img/vb-post.webp", "vb-type": "img/vb-type.webp"};var IMGDIM={"harini-hero": [680, 850], "harini": [900, 1125], "lb-board-v1": [1600, 930], "lb-board-v2": [1800, 995], "lb-lofi-smart": [648, 1440], "lb-lofi-today": [648, 1440], "lb-s03": [1920, 1080], "lb-s04": [1920, 1080], "lb-s10": [1920, 1080], "lb-s11": [1920, 1080], "lb-v1-add": [780, 1688], "lb-v2-add": [780, 1688], "lb-v2-smart": [780, 1688], "lb-v2-today": [780, 1688], "lb-v2-week": [780, 1688], "mo-ios-cart": [375, 812], "mo-ios-confirm": [375, 812], "mo-ios-home": [375, 812], "mo-ios-pdp": [375, 812], "mo-ios-shop": [375, 812], "mo-journey": [1120, 767], "mo-lofi-cart": [375, 812], "mo-lofi-home": [375, 812], "mo-lofi-pdp": [375, 812], "mo-mood": [1600, 1506], "mo-mweb-hifi": [2200, 1780], "mo-mweb-home": [375, 812], "mo-mweb-lofi": [2175, 2000], "mo-persona": [1120, 1194], "mo-research": [1120, 1171], "mo-sitemap": [1380, 1495], "mo-ui-desktop": [1600, 1931], "mo-ui-library": [1556, 1785], "mo-ui-mobile": [656, 1237], "mo-usability": [1120, 553], "mo-userflow": [2400, 952], "mo-web-cart": [1440, 714], "mo-web-home": [1440, 900], "mo-web-lofi": [2600, 1836], "mo-web-pdp": [1440, 826], "mo-web-shop": [1440, 780], "ng-analysis": [780, 1688], "ng-dirA": [870, 1574], "ng-dirB": [870, 1574], "ng-home": [780, 1688], "ng-journal": [780, 1688], "ng-mood": [900, 1200], "ng-profile": [780, 1688], "ng-routine": [780, 1688], "re-chart": [1400, 788],"re-recs":[1400, 788], "re-next":[1400, 788], "re-themes": [1400, 788], "tr-ad-before": [390, 844], "tr-ad": [390, 844], "tr-dm": [390, 844], "tr-doc-access": [1400, 360], "tr-doc-brand": [1400, 1060], "tr-doc-components": [1400, 430], "tr-doc-research": [1400, 490], "tr-doc-story": [1400, 360], "tr-ds-components": [1440, 1537], "tr-feed": [390, 844], "tr-inbox": [390, 844], "tr-lofi-ad": [390, 844], "tr-lofi-feed": [390, 844], "tr-profile": [390, 844], "vb-colors": [1325, 526], "vb-states": [1600, 1760], "vb-hero": [1440, 1000], "vb-index": [1440, 2601], "vb-m-index": [375, 1200], "vb-m-method": [375, 808], "vb-m-post": [375, 1050], "vb-post": [1440, 2873], "vb-type": [689, 1500]};</script>
+<script>
+var EMAIL='harinikailash1@gmail.com';
+/* ============ EDIT THESE LINKS (leave '' to hide a button) ============ */
+var LINKS={
+  resume:'Harini-Kailasam-Resume.pdf',            /* e.g. 'harini-kailasam-resume.pdf' or a Google Drive share link */
+  linkedin:'https://www.linkedin.com/in/harinikailasam/',          /* e.g. 'https://www.linkedin.com/in/your-name' */
+  proto:{modulo:'https://www.figma.com/proto/JsJXMc6znIAoI4nkpm3aNS/Harini-Kailasam-%E2%80%93-Project-10?page-id=2%3A2&node-id=73-198&starting-point-node-id=73%3A198',lunchbox:'',trove:'',newglow:'https://www.figma.com/proto/w6AuQZtEW32wQJaT47I6Q6/New-Glow---Project-8?page-id=0%3A1&node-id=21-2&starting-point-node-id=21%3A2',veggiebites:'',research:''},   /* Figma prototype / slides links */
+  timeline:{modulo:'1 month',lunchbox:'',trove:'',newglow:'2 weeks',veggiebites:'',research:''} /* e.g. '6 weeks' */
+};
+var PDFOK=!/claude|anthropic/i.test(location.hostname)&&/^(https?:|file:)/.test(location.protocol);
+function resumeHref(){return PDFOK?LINKS.resume:'#resume';}
+function resumeBtn(cls){return LINKS.resume?'<a class="btn ghost '+(cls||'')+'" href="'+resumeHref()+'"'+(PDFOK?' target="_blank" rel="noopener"':'')+'>View resume</a>':'<a class="btn ghost '+(cls||'')+'" href="mailto:'+EMAIL+'?subject=Resume%20request">Request my resume</a>';}
+function linkedinBtn(cls){return LINKS.linkedin?'<a class="btn ghost '+(cls||'')+'" href="'+LINKS.linkedin+'" target="_blank" rel="noopener">LinkedIn ↗</a>':'';}
+function im(n,alt,cls){var d=IMGDIM[n];return '<img src="'+IMG[n]+'" alt="'+alt+'"'+(d?' width="'+d[0]+'" height="'+d[1]+'"':'')+' loading="lazy" decoding="async"'+(cls?' class="'+cls+'"':'')+'>';}
+function fig(n,alt,cap){return '<figure class="fig">'+im(n,alt)+(cap?'<figcaption>'+cap+'</figcaption>':'')+'</figure>';}
+function phones(list,cls){return '<div class="phones '+(cls||'')+'">'+list.map(function(x){return im(x[0],x[1]);}).join('')+'</div>';}
+var FULLSTEPS=['Research','Persona','Journey','Flows','Visual direction','Wireframes','Testing','Design system','Product stories','The gap','Hi-fi v1','Hi-fi v2','Learning','Brand','Accessibility','The idea','Blog index','Blog post','Mobile','Style guide','Color and components','Findings','Evidence','Deciding','Accessibility fix'];
+var DETAILS=['Persona','Journey','Flows','Visual direction','Wireframes','Design system','Low-fi','Hi-fi v1','Brand','Style guide','Color and components'];
+function step(label,h,body,vis,full){full=full||vis===''||FULLSTEPS.indexOf(label)>-1;return '<div class="step'+(full?' full':'')+'"'+(DETAILS.indexOf(label)>-1?' data-d="'+label+'"':'')+'><div><div class="label">'+label+'</div><h2>'+h+'</h2>'+body+'</div>'+(vis===''?'':'<div>'+vis+'</div>')+'</div>';}
+function quote(t,w){return '<div class="quote">“'+t+'”<small>'+w+'</small></div>';}
+
+function sp(){return '<div style="height:14px"></div>';}
+function tag(list){return '<div class="tools" style="margin-top:14px">'+list.map(function(t,i){return '<span class="chip '+['','sage','lav','sun','blue'][i%5]+'">'+t+'</span>';}).join('')+'</div>';}
+var PROJECTS={
+modulo:{
+  name:'Modulo',c:'var(--c-modulo)',ct:'var(--tint-terracotta)',
+  tag:'Capstone · Full case study',
+  lead:'A furniture shop for first-time homeowners who want to know a sofa is worth it before they pay for it. Designed end to end for iOS, mobile web and desktop web.',
+  short:'A furniture shop that helps first-time homeowners buy with confidence. iOS, mobile web and desktop web.',
+  meta:[['Role','Solo UX/UI designer, end to end'],['Platforms','iOS app, mobile web, desktop web'],['Tools','Figma, FigJam'],['Context','TripleTen UX/UI program capstone']],
+  cover:['mo-ios-home|Modulo iOS home screen|height:430px','mo-web-home|Modulo desktop home page|height:330px','mo-ios-cart|Modulo iOS cart|height:430px'],
+  body:function(){return [
+   step('Overview','Furniture you can trust before you buy it',
+    '<p>Modulo is a concept online furniture shop for people furnishing their first home. For my capstone I designed the whole experience, from research and usability testing to a high-fidelity prototype, on three platforms.</p><p>The central problem is trust. Furniture is expensive, hard to return and impossible to judge from a photo. I designed Modulo to answer three doubts before checkout: will it fit, will it last, and what will it really cost.</p>'+
+    '<div class="stat"><div><b>3 + 3</b><span>user interviews plus three competitors reviewed</span></div><div><b>3 → 3</b><span>tester findings became design changes</span></div><div><b>3</b><span>platforms on one shared UI library</span></div></div>',
+    ''),
+   step('Research','What shoppers told me, and what competitors miss',
+    '<p>I interviewed three people with different reasons to buy furniture online: a first-time renter, a first-time homeowner and a sustainability-minded shopper. I also studied Article, Burrow and IKEA to see where each one earns trust and where it loses it.</p>'+
+    '<ul><li><b>Alex, first-time renter:</b> needs light, modular pieces for tight layouts, clear measuring tools and simple returns.</li><li><b>Jordan, first-time homeowner:</b> wants durable statement pieces and struggles to decide visually online. Needs reliable AR, material swatches and honest comfort ratings.</li><li><b>Sam, sustainability-minded:</b> distrusts vague eco claims and wants sourcing, packaging and repair or recycle details on the product page.</li></ul>',
+    fig('mo-research','UX research summary: three interview takeaways, three competitor notes and three insights')),
+   step('Competitors','Three products, three gaps',
+    '<ul><li><b>Article.</b> Attractive products and accurate photos, but delivery delays and damaged items erode trust. Opportunity: clear delivery tracking and care guides.</li><li><b>Burrow.</b> A fun configurator that suits small spaces, but comfort is hard to judge online and sustainability feels vague. Opportunity: comfort and fit visuals plus material details.</li><li><b>IKEA.</b> A powerful AR room tool, but slow search, clunky favorites and surprise shipping costs. Opportunity: fast filters, upfront costs and simple AR.</li></ul>'+
+    '<p style="margin-top:14px">Together with the interviews, these became three insights that guided every later decision:</p>',
+    '<div class="insights"><div><b>01</b><h3>Confidence before checkout</h3><p>Shoppers need to know a piece will fit their space and feel right before buying, through clear dimensions, comfort details and in-room previews.</p></div><div><b>02</b><h3>Trust breaks at delivery</h3><p>Shipping costs, timelines and stock status shown up front, plus tracking after purchase, so there are no surprises.</p></div><div><b>03</b><h3>Sustainability must be specific</h3><p>Vague eco claims are not believed. Users want concrete material, sourcing and packaging details on the product page.</p></div></div>'),
+   step('Persona','Designing for Jordan',
+    '<p>I built the persona around the second interviewee, Jordan Chen, a 29-year-old product manager in Austin who just bought a first home. Jordan researches on a laptop, rechecks on a phone, reads reviews and watches walkthrough videos before trusting a brand.</p>'+quote('I want pieces that’ll last, but I can’t tell from a photo if a sofa is actually worth it. I need to feel confident before I spend real money on something I can’t return easily.','Jordan Chen, persona')+
+    '<p style="margin-top:14px">The persona sheet also maps each pain point to a design answer:</p><ul><li><b>Tight budget:</b> shipping and return costs shown up front.</li><li><b>Little free time:</b> quick filters by size, style and material.</li><li><b>Furniture that wears out:</b> material, construction and care details on every product page.</li><li><b>Decision overload:</b> curated collections and design guides.</li></ul>',
+    fig('mo-persona','Persona sheet for Jordan Chen: goals, needs, pain points and behaviors')),
+   step('Journey','Four stages, a pain point in each',
+    '<p>The journey map follows Jordan from the first search to a delivered order, and records actions, emotions, touchpoints, pain points and opportunities at each stage.</p><ul><li><b>Awareness:</b> hard to tell real sustainability claims from greenwashing.</li><li><b>Onboarding:</b> unsure whether an account is needed just to browse.</li><li><b>Engagement:</b> the AR preview does not cover every product.</li><li><b>Retention:</b> delivery timing and updates can feel unclear.</li></ul><p style="margin-top:12px">Each pain point has a matching opportunity, such as specific sustainability messaging, free browsing without an account, wider AR coverage and live delivery tracking.</p>',
+    fig('mo-journey','Customer journey map across awareness, onboarding, engagement and retention')),
+   step('Flows','Designing around the moment people leave',
+    '<p>The sunny-day user flow follows Jordan from the home page to a confirmed order. Every diamond is a real decision with a labeled yes and no path: does Jordan have a specific piece in mind, does the piece suit their needs, is the total acceptable, do they have an account.</p><p>I marked the one place a shopper walks away, when the total is too high, and drew a recovery path that offers a promo code, a cheaper swap or a saved cart.</p><p>The product map then shows how Home connects to Shop, Learn, Cart and Account, and how product detail leads to checkout. The terracotta line is the purchase path.</p>',
+    fig('mo-userflow','Sunny-day user flow with drop-off point and cost relief path')+sp()+fig('mo-sitemap','Product map showing how home, shop, learn, cart, account and checkout connect')),
+   step('Visual direction','Furniture made to last',
+    '<p>The mood board turns the research into a feeling: warm, honest, durable, calm, modular and responsibly sourced. Terracotta and sage on warm cream come from the materials themselves, undyed oat linen, natural alder joinery, sage bouclé and FSC-certified timber.</p><p>The palette has eight values: terracotta with a pressed shade and a light tint, sage with a pale tint, cream, and two warm browns for text. The three insights sit on the board as design principles: confidence before checkout, no surprises at delivery, and sustainability that is specific.</p>',
+    fig('mo-mood','Modulo mood board with imagery, color palette and three guiding principles')),
+   step('Wireframes','Structure before style',
+    '<p>I sketched the experience in gray boxes first, on all three platforms, so I could test the path from home to confirmed order without color or photos getting in the way. Each set covers Home, Shop, four product pages, Cart, Order confirmation and a Coming soon overlay for anything outside the prototype.</p>',
+    phones([['mo-lofi-home','Low-fidelity iOS home wireframe'],['mo-lofi-pdp','Low-fidelity iOS product detail wireframe'],['mo-lofi-cart','Low-fidelity iOS cart wireframe']])+sp()+fig('mo-mweb-lofi','Low-fidelity mobile web wireframes: home, shop, cart, confirmation and four product pages')+sp()+fig('mo-web-lofi','Low-fidelity desktop web wireframes: home, shop, four product pages, cart and confirmation')),
+   step('Testing','Three testers, three clear changes',
+    '<p>I tested the low-fidelity iOS prototype in remote sessions with three people who were not among the interviewees but match the research: a 29-year-old first-time renter, a 29-year-old first-time homeowner who was hesitant about buying online, and a 34-year-old shopper focused on eco claims and cost transparency. Each one searched for a piece, browsed and filtered collections, checked dimensions and specs, and added an item to the cart.</p><ul><li><b>What worked:</b> completing search to cart, browsing collections and filtering, and scanning dimensions and specs.</li><li><b>What needed work:</b> shipping fees appeared late and caused hesitation at checkout. Testers also wanted firmer assurance on material quality and an easier way to reach the AR preview.</li></ul><p style="margin-top:12px">Three changes followed: show estimated shipping earlier on the product page and cart, add prominent material, sourcing and durability details, and make the AR button more prominent.</p>',
+    fig('mo-usability','Usability testing summary: what worked, what needs improvement and changes made')+sp()+'<p style="margin:0 0 10px"><b>The shipping change in the cart.</b> Before (left), the low-fidelity cart showed only a total. After (right), the hi-fi cart lists subtotal, shipping and tax.</p>'+phones([['mo-lofi-cart','Low-fidelity iOS cart showing only a total'],['mo-ios-cart','Hi-fi iOS cart listing subtotal, shipping and tax']],'two')),
+   step('iOS app','From home to order confirmed',
+    '<p>The hi-fi iOS app applies those changes. The cart lists subtotal, shipping and tax before checkout, with a note that nothing changes later. Product pages lead with material and construction details, show color options, and keep a View in AR button above expandable rows for Materials and care and Shipping and returns. The confirmation screen gives an order number, total and delivery window.</p>',
+    phones([['mo-ios-home','Modulo iOS home'],['mo-ios-shop','Modulo iOS shop with category chips'],['mo-ios-pdp','Modulo iOS product detail for the Bramble sofa']])+sp()+phones([['mo-ios-cart','Modulo iOS cart with shipping shown upfront'],['mo-ios-confirm','Modulo iOS order confirmation']],'two')),
+   step('Product stories','Every piece explains why it lasts',
+    '<p>Copy is part of the trust work. Each product page says what it is made of and how it can be looked after:</p><ul><li><b>Bramble sofa, $1,249.</b> An FSC-certified hardwood frame with undyed organic linen made to be re-covered for decades.</li><li><b>Weston lounge chair, $649.</b> A solid FSC-certified oak frame with a wool-blend cushion you can swap out on its own.</li><li><b>Alder shelving unit, $389.</b> Modular cubbies that bolt together without glue, so the unit can grow, move or be taken apart.</li><li><b>Birch accent chair, $529.</b> A steam-bent birch frame where every part is labeled so it can be repaired or recycled.</li></ul>',
+    fig('mo-web-pdp','Modulo desktop product page for the Bramble sofa, with material and care details')),
+   step('Web','Mobile web and desktop in one system',
+    '<p>Mobile web and a 1440px desktop version use the same system, so a shopper can start on a phone and finish on a laptop without relearning anything. Mobile gets a browser bar, a compact header and a menu. Desktop adds a full header with category links, a wider product gallery with details beside it, and an order summary that stays next to the cart.</p>',
+    fig('mo-mweb-hifi','Hi-fi mobile web screens: home, shop, four product pages, cart, confirmation and overlay')+sp()+fig('mo-web-home','Modulo desktop home page')+sp()+fig('mo-web-shop','Modulo desktop shop page with filter chips and product grid')+sp()+fig('mo-web-cart','Modulo desktop cart with order summary and upfront shipping cost')),
+   step('Design system','One library behind every screen',
+    '<p>I built a UI library so each screen is assembled from the same parts: color and type styles, primary and secondary buttons, inputs with default, focus and error states, steppers, filter chips, color swatches, icons, product cards, cart rows, accordion rows, navigation, dialogs and the add-to-cart bar. Mobile web and desktop have their own boards for platform-specific parts like the browser bar, header and footer, and reuse everything else.</p>',
+    fig('mo-ui-library','Modulo UI library: color, type, buttons, inputs, icons, cards, navigation and feedback')+sp()+fig('mo-ui-desktop','Modulo desktop UI library: product card, header, footer and shared components')+sp()+'<div style="max-width:420px;margin-inline:auto">'+fig('mo-ui-mobile','Modulo mobile web UI library: menu icon, browser bar, header and footer')+'</div>')
+  ].join('')+'<div class="learn"><h2>What I took from it</h2><ul><li>Grounding the work in one persona, Jordan, gave every screen one question to answer: does this help Jordan feel confident?</li><li>Even three testers surfaced concrete problems, late shipping fees, thin material assurance and hard-to-find AR, and each one became a design change.</li><li>Designing the moment someone might leave is as important as the happy path.</li><li>A shared component library made three platforms feel like one product, because a change to one component carried through every screen that used it.</li><li>Limits: this was a concept project with three interviews and three testers, so I treat the findings as directional. Next step: re-test the hi-fi prototype with five users, focused on checkout confidence.</li></ul></div>';}
+},
+lunchbox:{
+  name:'Lunchbox',c:'var(--c-lunchbox)',ct:'var(--tint-sun)',
+  tag:'Case study · Mobile app',
+  lead:'A to-do app built for parents who pack school lunches every day, with a Smart Weekly Plan that builds a week of lunches in one tap.',
+  short:'A lunch-packing to-do app for parents, with a Smart Weekly Plan that builds a week of lunches in one tap.',
+  meta:[['Role','UX/UI designer and researcher'],['Platform','iOS mobile app'],['Tools','Figma'],['Context','TripleTen UX/UI program assignment'],['Focus','Competitive research, prioritization, prototyping, usability testing']],
+  cover:['lb-v2-today|Lunchbox v2 Today screen|height:430px','lb-v2-smart|Lunchbox v2 Smart Weekly Plan screen|height:430px','lb-v2-week|Lunchbox v2 Weekly Plan grid|height:430px'],
+  body:function(){return [
+   step('The gap','No to-do app understands lunchboxes',
+    '<p>I compared Todoist, Any.do and Microsoft To Do. Each is strong at tasks, but none is built around a parent who plans kids’ lunches.</p><ul><li><b>Todoist:</b> clean UI and priority flags, but no meal context or kid-friendly features.</li><li><b>Any.do:</b> a daily planner view with friendly onboarding, but no parent-oriented meal planning.</li><li><b>MS To Do:</b> seamless lists and Microsoft integration, but no smart suggestions or AI-generated plans.</li></ul>',
+    fig('lb-s03','Competitive findings for Todoist, Any.do and MS To Do with a WSJF priority matrix')),
+   step('Deciding','Pick the feature with the most value for the least effort',
+    '<p>I scored five feature ideas with a WSJF matrix, weighing value against complexity. The Smart Weekly Plan came out on top, high value and low complexity, so it became the heart of the app.</p>',
+    '<div class="stat"><div><b>9.2</b><span>Smart Weekly Plan, top score</span></div><div><b>6.5</b><span>Recurring tasks</span></div><div><b>4.1</b><span>Voice input</span></div><div><b>3.8</b><span>Nutrition tracker</span></div><div><b>2.9</b><span>Social sharing</span></div></div>'),
+   step('Low-fi','Four screens, one job each',
+    '<p>I started with low-fidelity wireframes for the four core screens: Today’s Lunch, Add Lunch Item, Smart Weekly Plan and Weekly Lunch Plan. The aim was to make adding an item, marking it done and asking for a plan feel obvious. Two of the four are shown here.</p>',
+    phones([['lb-lofi-today','Low-fidelity Today screen'],['lb-lofi-smart','Low-fidelity Smart Weekly Plan screen']],'two')),
+   step('Hi-fi v1','Color, priority and a smart plan',
+    '<p>The first hi-fi version adds color and a Critical priority that flags must-pack items. The Smart Weekly Plan asks for three things, the child’s age, a preference such as veg or picky, and time available, either 5 or 15 minutes. It then fills a Monday to Friday grid that a parent can tick off and customize.</p>',
+    fig('lb-board-v1','Hi-fi prototype first iteration: Today’s Lunch, Add Lunch Item, Smart Weekly Plan and Weekly Lunch Plan')),
+   step('Testing','Five participants, and every finding became a change',
+    '<p>I ran moderated remote sessions of about 20 minutes with five people aged 26 to 38, parents and non-parents, recruited from friends and family. Everyone added a task on the first try and understood the bottom navigation, and the weekly grid was readable once generated. The friction points were specific and fixable:</p><ul><li>3 of 5 missed the Critical priority toggle.</li><li>2 of 5 were unsure what Generate Weekly Plan would do.</li><li>1 of 5 could not find how to edit an existing task.</li><li>All 5 got no confirmation after tapping Save.</li></ul>'+quote('I wasn’t sure what Generate My Week would do. A short description would help.','Participant 2, software engineer'),
+    fig('lb-s04','Usability testing findings: successes and friction points')+sp()+fig('lb-s10','Issues ranked by number of users affected')),
+   step('Hi-fi v2','Every finding became a change',
+    '<p>The second version fixes each problem: a thicker red border and glow on the Critical toggle, a subtitle on the generate button, an edit pencil on every task, an Item saved toast, and Kid’s Age marked Optional so the app feels open to non-parents too.</p><p>I also tightened the interface while rebuilding the screens: one orange for every primary action, a bottom bar that highlights the screen you are on, vector icons in place of emoji controls, 44 pt touch areas for the back, edit and tab buttons, text checked against a 4.5:1 contrast ratio, and a weekly grid that shows meal names and a Packed tick so it matches the plan the generator promises.</p>',
+    fig('lb-board-v2','Hi-fi prototype second iteration with the five changes from version 1 listed below the screens')+sp()+fig('lb-s11','Table of issues, changes made and why')+sp()+phones([['lb-v1-add','Version 1 Add item screen'],['lb-v2-add','Version 2 Add item screen with fixes']],'two'))
+  ].join('')+'<div class="learn"><h2>What I took from it</h2><ul><li>Scoring ideas before designing kept the scope small and the product focused.</li><li>The smallest details, like a missing save message, affected every participant.</li><li>Plain-language labels matter most on features that feel new, like an AI plan.</li><li>Next step: test the Smart Weekly Plan with parents over a real school week.</li></ul></div>';}
+},
+trove:{
+  name:'Trove',c:'var(--c-trove)',ct:'var(--tint-orange)',
+  tag:'Case study · Mobile app',
+  lead:'A friendly marketplace app for buying and selling second-hand items near you, built around photos, quick messages and trust.',
+  short:'A friendly marketplace app for buying and selling second-hand items near you.',
+  meta:[['Role','UX/UI designer'],['Platform','iOS mobile app, 390×844'],['Tools','Figma'],['Context','TripleTen UX/UI program assignment'],['Focus','Wireframes, hi-fi prototype, mini design system']],
+  cover:['tr-feed|Trove feed screen|height:430px','tr-ad|Trove item page|height:430px','tr-inbox|Trove inbox|height:430px'],
+  body:function(){return [
+   step('The idea','Shop nearby, save money, waste less',
+    '<p>Trove is a peer-to-peer marketplace. The name means a store of valuable things, short, warm and memorable, which fits a place where people find hidden gems nearby. I wrote one user story to anchor the design and followed one shopper, Maya, through it.</p>'+quote('As a user, I want to browse and buy second-hand items near me so I can save money and shop sustainably.','User story'),
+    fig('tr-doc-story','User story with four steps: browse feed, view item, message seller, arrange pickup')),
+   step('Learning','Three references, three decisions',
+    '<p>Before designing I studied Apple’s Human Interface Guidelines, Facebook Marketplace and OfferUp, and turned each into a design decision:</p><ul><li><b>Apple HIG:</b> use tab bars, not hamburger menus. Every destination stays visible, which lowers cognitive load.</li><li><b>Facebook Marketplace:</b> lead with the image. People judge a listing by its photo in a second or two, so photos take about 60% of each card.</li><li><b>OfferUp:</b> keep messaging inside the app. It reduces drop-off, so Trove’s inbox and DM screens avoid asking anyone to share contact details.</li></ul>',
+    fig('tr-doc-research','Research takeaways from Apple HIG, Facebook Marketplace and OfferUp')),
+   step('Wireframes','Layout first',
+    '<p>The low-fidelity wireframes cover the five screens that make up a purchase: Feed, Ad Page, Inbox, DM Screen and User Profile. Gray photo placeholders and a single black accent kept attention on layout, hierarchy and navigation before any styling.</p>',
+    phones([['tr-lofi-feed','Low-fidelity Trove feed wireframe'],['tr-lofi-ad','Low-fidelity Trove item page wireframe']],'two')),
+   step('Hi-fi','Five screens, one flow',
+    '<p>Maya opens the <b>Feed</b> and filters by category chips. She taps a card to see the <b>Ad Page</b> with a photo gallery, price, condition and distance tags, a short description and seller info, then taps Message Seller. The <b>Inbox</b> separates Buying and Selling with unread dots, and the <b>DM Screen</b> keeps the item pinned above the chat so negotiation stays in context. The <b>Profile</b> shows a user’s listings, rating and items sold, so sellers can build trust too. Before a meet-up, buyers check the seller’s rating and sales on the Ad Page.</p>',
+    phones([['tr-feed','Trove feed'],['tr-ad','Trove item page'],['tr-inbox','Trove inbox']])+sp()+phones([['tr-dm','Trove chat screen'],['tr-profile','Trove profile screen']],'two')),
+   step('Brand','Orange for energy and trust',
+    '<p>Orange is the primary color because it feels energetic, friendly and trustworthy, and it makes buttons and prices easy to spot on white. Soft pastel card backgrounds (purple, green, yellow and red) help people tell item categories apart without competing with the photos. Inter is the typeface, in three weights for a clear hierarchy: bold for titles and prices, medium for labels and regular for descriptions and captions.</p>',
+    fig('tr-doc-brand','Trove brand, color palette and typography documentation')),
+   step('Design system','Master components, edited once',
+    '<p>I built a mini design system so every repeated element is one master component: status bar, navigation bar, three header variants, product card, inbox row, chat bubbles, search and message inputs, button, chips and tags. Changing a master updates every screen that uses it.</p>',
+    fig('tr-doc-components','Eight reusable components: buttons, chips, cards, inbox rows, chat bubbles, nav bar, headers and inputs')+sp()+fig('tr-ds-components','Mini design system master components')),
+   step('Accessibility','Built for thumbs and screen scanning',
+    '<p>The layout follows a few firm rules: buttons, category chips, the Buying/Selling tabs, the search bar, nav items and header icon buttons all meet the 44pt touch-target minimum, a 390×844 frame respects safe areas, three clear text levels help people scan, and the tab bar’s active tab uses both color and a pill highlight, so state never depends on color alone. Small inline text links, like See more, are the one place still under 44pt.</p>',
+    fig('tr-doc-access','Layout and accessibility decisions')),
+   step('Accessibility fix','Finding my own contrast problem, then fixing it',
+    '<p>While documenting Trove I measured the original brand orange against white text at about 2.5:1, well under the 4.5:1 WCAG AA guideline for small text. I darkened the orange to <b>#B85000</b>, which reaches about 5:1 with white text, and updated every screen, button, chip and chat bubble.</p><p style="margin-top:12px">Orange is still the energetic brand color. Prices, active tabs and the Message Seller button now stay readable in sunlight and for people with low vision.</p>',
+    '<div class="cmp"><div class="bad"><span class="sw" style="background:#F5871F">Message Seller</span><b>2.5 : 1</b><small>Before · fails AA for small text</small></div><div class="good"><span class="sw" style="background:#B85000">Message Seller</span><b>5.0 : 1</b><small>After · passes AA</small></div></div>'+sp()+phones([['tr-ad-before','Trove item page with the original orange, before the contrast fix'],['tr-ad','Trove item page with the darker accessible orange']],'two'))
+  ].join('')+'<div class="learn"><h2>What I took from it</h2><ul><li>Borrowing proven patterns, like tab bars and image-first cards, let me spend my effort on the parts that make Trove its own.</li><li>Documenting every decision as I went made the design system easy to build and easy to explain.</li><li>Next step: test the message flow with real buyers and sellers, and design the Sell tab that the navigation already points to.</li><li>Checking my own work, I measured the brand orange on white at about 2.5:1, below the 4.5:1 guideline for small text. I darkened it to #B85000 (about 5:1), updated every screen and documented the change.</li></ul></div>';}
+},
+newglow:{
+  name:'New Glow',c:'var(--c-newglow)',ct:'var(--tint-lavender)',
+  tag:'Case study · Mobile app',
+  lead:'A calm skincare companion that turns a daily routine, a skin journal and weekly progress photos into one gentle ritual.',
+  short:'A calm skincare companion with a daily routine, skin journal and weekly progress photos.',
+  meta:[['Role','UX/UI and visual designer'],['Platform','iOS mobile app'],['Tools','Figma'],['Context','TripleTen UX/UI program assignment'],['Focus','Visual direction, hi-fi prototype']],
+  cover:['ng-home|New Glow home screen|height:430px','ng-analysis|New Glow skin analysis|height:430px','ng-routine|New Glow routine|height:430px'],
+  body:function(){return [
+   step('Mood','Soft, lavender, ritual-first',
+    '<p>Skincare apps often feel clinical. I wanted New Glow to feel like a quiet morning: lavender, oat and cream, with room to breathe. The mood board gathers textures, light and botanicals to set that feeling before any screen existed.</p>',
+    fig('ng-mood','New Glow mood board with lavender, skincare textures and an app screen','Images are for inspiration only. People photos in the app screens are AI-generated.')),
+   step('Two directions','Dreamy Ritual or Quiet Luxury',
+    '<p>I explored two visual directions on the same home screen. <b>Dreamy Ritual</b> is romantic and feminine, with a Georgia serif and lavender tones. <b>Quiet Luxury</b> is minimal and grounded, with Helvetica Neue and warm sand tones. Comparing them side by side made the choice clear: lavender and a soft serif for the final app.</p>',
+    '<div class="phones two">'+im('ng-dirA','Dreamy Ritual direction with Georgia serif and lavender palette')+im('ng-dirB','Quiet Luxury direction with Helvetica Neue and sand palette')+'</div>'),
+   step('Screens','Five tabs, one routine',
+    '<p>Home shows a skin score, the daily ritual, a tip and a streak. Analysis tracks hydration, clarity, radiance and texture, with four weeks of progress photos and an AI insight. The journal logs how skin feels each day, and the routine lists morning and evening steps with times. Profile holds the score, streak, reminders and skin type.</p>',
+    phones([['ng-home','Home screen'],['ng-analysis','Skin analysis'],['ng-journal','Skin journal']])+sp()+phones([['ng-routine','Routine'],['ng-profile','Profile']],'two')),
+   step('Accessibility fix','Making the lavender readable',
+    '<p>When I checked contrast on my own palette, the lavender from the first direction (<b>#9B7FC7</b>) reached only about 3.4:1 with white text, under the 4.5:1 WCAG AA guideline for small text. The pale gray-purple and tan label colors were lower still.</p><p style="margin-top:12px">For the final screens I darkened the lavender to <b>#7459A3</b>, which reaches about 5.7:1 with white text and 5.3:1 on the cream background, and darkened the label colors to roughly 5:1 on cream. The soft, calm feel stays, and button labels, tabs and small captions are easier to read. The direction boards above show the original palette.</p>',
+    '<div class="cmp"><div class="bad"><span class="sw" style="background:#9B7FC7">Save today’s entry</span><b>3.4 : 1</b><small>Before · fails AA for small text</small></div><div class="good"><span class="sw" style="background:#7459A3">Save today’s entry</span><b>5.7 : 1</b><small>After · passes AA</small></div></div>')
+  ].join('')+'<div class="learn"><h2>What I took from it</h2><ul><li>Testing two directions on the same screen made a style decision quick and easy to explain.</li><li>A warm, quiet palette and generous space can make a data-heavy screen feel calm.</li><li>Checking contrast on my own palette caught a soft lavender that was too light for small text. I darkened it and kept the calm feel.</li><li>Next step: test the routine and journal with real users to see which habits stick.</li></ul></div>';}
+},
+veggiebites:{
+  name:'Veggie Bites',c:'var(--c-veggie)',ct:'var(--tint-sage)',
+  tag:'Case study · Responsive website',
+  lead:'A recipe blog for vegetarian cooks, designed for desktop and mobile, with a flexible type scale and a fresh green and orange palette.',
+  short:'A responsive vegetarian recipe blog with a clear type scale and a fresh green and orange palette.',
+  wide:true,
+  meta:[['Role','UX/UI designer'],['Platforms','Desktop 1440px and mobile 375px'],['Tools','Figma'],['Context','TripleTen UX/UI program assignment'],['Focus','Responsive layout, style guide, components, accessibility']],
+  cover:['vb-hero|Veggie Bites desktop home page|width:min(100%,640px)','vb-m-index|Veggie Bites mobile recipe list|height:430px'],
+  body:function(){return [
+   step('The brief','All things vegetarian in one place',
+    '<p>Veggie Bites is a blog where vegetarian cooks share recipes. The photos, recipes and contributors shown are sample content for the design. I designed the two pages that matter most, the blog index where people browse recipes and the blog post where they cook from one, for both desktop and mobile.</p>',
+    ''),
+   step('Blog index','Browse by what you want to eat',
+    '<p>A full-bleed leafy hero sets the tone, with two clear actions, Browse Recipes and Our story. Below it, category chips (All, Breakfast, Lunch, Dinner, Snacks, Desserts) filter a grid of recipe cards. Each card shows a colored category tag, a photo, the title, cooking time, servings and a Read Recipe link, so people can compare at a glance. On mobile the chip row scrolls sideways, with the last chip peeking in as a cue.</p><p>A green band introduces the contributors and a final call to action invites readers to write for the site. The navigation marks the current page with a green underline.</p>',
+    fig('vb-index','Veggie Bites desktop blog index with hero, filters, recipe grid, contributors and call to action')),
+   step('Blog post','Made to be read with flour on your hands',
+    '<p>The post page keeps one narrow column for reading: breadcrumbs, a category tag, a large serif title, the author with date, read time and servings, then a short intro and a pull quote. Ingredients come first as a simple list, then the method as numbered steps, then tags and a You May Also Like row of related recipes.</p>',
+    fig('vb-post','Veggie Bites desktop blog post for roasted cauliflower and chickpea curry')),
+   step('Mobile','The same story in one column',
+    '<p>On a 375px screen the hero shortens, recipe cards stack one per row with the same tag, time and servings, and the post header condenses the author and meta into tags such as Serves 4, Vegan and Gluten-Free, and the method becomes numbered steps that wrap cleanly under each number. Type steps down one size so lines stay comfortable to read.</p>',
+    phones([['vb-m-index','Veggie Bites mobile recipe list'],['vb-m-post','Veggie Bites mobile blog post header'],['vb-m-method','Veggie Bites mobile method steps and tags']],'three')),
+   step('Style guide','A type scale that adapts',
+    '<p>Playfair Display Bold gives headlines a warm editorial voice and Inter keeps body text clean. I defined display and heading styles for desktop (display 72, 60 and 48, headings from 40 down to 15) and a smaller mobile scale (display 48, 40 and 32, headings from 30 down to 14), so the hierarchy holds on every screen.</p>',
+    fig('vb-type','Veggie Bites style guide with desktop and mobile typography')),
+   step('Color and components','Green for calm, orange for action',
+    '<p>The palette is built on brand green, from a deep forest tone for dark bands to a pale wash for backgrounds. Orange is the accent for category tags and key actions, and neutrals keep text readable. I deepened the orange to #C2410C so white text on tags and buttons passes 4.5:1 contrast, and set dark green text on the light-green primary button for the same reason. Buttons come in primary, secondary, accent and ghost styles, with a pill tag for diet labels like Vegan.</p>',
+    fig('vb-colors','Veggie Bites color palette: brand greens, orange accents and neutrals')),
+   step('Interaction states','Every control shows where you are',
+    '<p>A page is only usable if people can tell what is clickable, where they are and where the keyboard is. I added the missing states for every interactive element. The current page in the main nav is green, semi-bold and underlined. Buttons, category chips and links each get hover and pressed styles, and recipe cards lift with a deeper shadow, turn the title green and underline Read Recipe.</p><p>On mobile, the menu button has closed, open and pressed states. When the menu is open, the current page gets an orange bar and tint and every row is a 60px tap target.</p><p>Keyboard focus uses one rule everywhere, a 2px dark ring with a small gap, so it stays visible on light and dark backgrounds. Hover and pressed colors keep text at 4.5:1 contrast or better.</p>',
+    fig('vb-states','Veggie Bites interaction states: hover, pressed and focus for buttons, chips, nav links and recipe cards, plus the mobile menu closed, open and pressed'))
+  ].join('')+'<div class="learn"><h2>What I took from it</h2><ul><li>Defining desktop and mobile type scales up front made responsive layouts faster and more consistent.</li><li>Putting time and servings on every recipe card helps people choose without opening each one.</li><li>An accessibility pass before hand-off: every text and background pair now meets 4.5:1, meta icons are vector and keep their text labels, and the recipe photos need alt text that names the dish when the pages are built.</li><li>Checking contrast on every color pair early would have saved a late fix: white text on the first orange and light green failed 4.5:1.</li><li>Designing states late exposed gaps: nothing showed the current page or keyboard focus until I added them. Next time I will design them with the components.</li><li>Next step: usability test the recipe page with people cooking, to see how they use the ingredient list and steps.</li></ul></div>';}
+},
+research:{
+  name:'Meal Planning Research',c:'var(--c-research)',ct:'var(--tint-blue)',
+  tag:'Case study · UX research',
+  lead:'Five interviews about why people skip meal planning, and four ideas that make planning feel faster and easier.',
+  short:'Five interviews about why people skip meal planning, and four ideas that make it easier.',
+  wide:true,
+  meta:[['Role','UX researcher'],['Method','5 user interviews, thematic analysis'],['Tools','Figma Slides'],['Output','Insights and design recommendations']],
+  cover:['re-themes|Key themes slide|width:min(100%,640px)'],
+  body:function(){return [
+   step('Question','Why do people give up on planning meals?',
+    '<p>The goal was to understand what frustrates people about meal planning and find ways to make it faster and easier. Three questions guided the interviews: what frustrates users, what slows them down or makes them give up, and what would make the experience feel simpler.</p>',
+    ''),
+   step('Findings','Three themes kept coming back',
+    '<p>Across five interviews, three themes repeated: lack of time, too many options, and a need for flexibility.</p>'+quote('I like the idea of planning, but I don’t have time to sit and do it.','Interview participant'),
+    fig('re-themes','Key themes from interviews: lack of time, too many options, needs flexibility')),
+   step('Evidence','Choosing meals is the biggest pain point',
+    '<p>I grouped interview notes into themes, then counted how many of the five participants mentioned each issue, which showed which problems were most shared. Choosing meals came up in all five interviews, lack of time in four and hard recipes in two.</p><div class="stat"><div><b>5/5</b><span>Choosing meals</span></div><div><b>4/5</b><span>Lack of time</span></div><div><b>2/5</b><span>Hard recipes</span></div></div>',
+    fig('re-chart','Bar chart of top pain points from five users')),
+   step('Recommendations','Four ideas that cut effort',
+    '<ul><li><b>Auto Menu Builder.</b> Generate a weekly plan in one tap, with quick edits. Helps with lack of time.</li><li><b>Curated “Pick for me”.</b> Limit choices to a few best matches. Helps with decision fatigue.</li><li><b>“Cook from what I have”.</b> Suggest recipes from ingredients on hand. Helps reduce grocery waste, though no one raised waste in these interviews, so this one is a hypothesis to test.</li><li><b>Easy serving adjustments.</b> One-tap plus and minus with updated amounts. Helps with flexibility.</li></ul>',
+    fig('re-recs','Recommended improvements: Auto Menu Builder, Pick for me, Cook from what I have, easy serving adjustments')),
+   step('Limits','What this research can and cannot tell us',
+    '<p>Five interviews show patterns, not proof, and the findings come from what people said rather than from watching them plan meals. The counts show priorities, not exact sizes. The next step is to prototype the Auto Menu Builder and test it against a manual plan, and to check whether grocery waste matters before building “Cook from what I have”.</p>',
+    fig('re-next','Limitations and next steps slide'))
+  ].join('')+'<div class="learn"><h2>What I took from it</h2><ul><li>Counting mentions turns interview notes into a clear order of priorities.</li><li>The same quote can justify a feature and keep a team focused on the person behind it.</li><li>Five interviews show patterns, not proof, so the counts point to priorities rather than measure them.</li><li>Next step: prototype the Auto Menu Builder and test it against a manual plan.</li></ul></div>';}
+}
+};
+
+function card(k){var p=PROJECTS[k];var imgs=p.wide?[p.cover[0]]:p.cover.slice(0,2);
+  return '<a class="card" href="#'+k+'" style="--c:'+p.c+';--ct:'+p.ct+'"><div class="thumb">'+imgs.map(function(c){var a=c.split('|');return im(a[0],a[1],p.wide?'w':'');}).join('')+'</div><div class="body"><div class="chip" style="width:max-content;background:'+p.ct+'">'+p.tag.split(' · ')[1]+'</div><h3>'+p.name+'</h3><p>'+p.short+'</p><span class="more">Read the case study →</span></div></a>';}
+
+
+PROJECTS.lunchbox.tag='Case study · Mobile app';
+PROJECTS.trove.tag='Case study · Mobile app';
+PROJECTS.newglow.tag='Visual design · Mobile app';
+PROJECTS.veggiebites.tag='Case study · Responsive website';
+PROJECTS.research.tag='Case study · UX research';
+PROJECTS.modulo.glance=[['Problem','Furniture is expensive, hard to return and impossible to judge from a photo, so first-time buyers hesitate before they pay.'],['Key decision','Answer three doubts before checkout: will it fit, will it last, and what will it really cost. Shipping, materials and AR are shown up front.'],['Outcome','A low-fidelity iOS prototype tested with three people. The three changes that came out of it, earlier shipping estimates, clearer material details and a more prominent AR button, carried into the hi-fi iOS, mobile web and desktop designs.']];
+PROJECTS.lunchbox.glance=[['Problem','Parents who pack school lunches every day have no to-do app built for it.'],['Key decision','Scored five feature ideas with a WSJF matrix and built the app around the top scorer, the Smart Weekly Plan (9.2).'],['Outcome','Tested with five participants. Every finding became a change in version 2.']];
+PROJECTS.trove.glance=[['Problem','Buying second-hand items nearby depends on trust. People judge a listing by its photo and want to negotiate without leaving the app.'],['Key decision','Lead with photos, use a tab bar instead of a hamburger menu, and keep messaging inside the app.'],['Outcome','A five-screen flow, a mini design system of ten master components, and an accessibility pass that included a contrast fix to the brand orange.']];
+PROJECTS.newglow.glance=[['Problem','Skincare apps often feel clinical. This one is for people building a calm daily routine.'],['Key decision','Compared two visual directions on the same screen and chose lavender with a soft serif.'],['Outcome','A five-screen hi-fi app: home, analysis, journal, routine and profile. Next step is testing the routine and journal with real users.']];
+PROJECTS.veggiebites.glance=[['Problem','Vegetarian home cooks need one place to browse recipes and then cook from them, on any screen.'],['Key decision','Show time and servings on every recipe card, and define a type scale that adapts between desktop (1440px) and mobile (375px).'],['Outcome','Two responsive pages (blog index and recipe post), a style guide and a component set.']];
+PROJECTS.research.glance=[['Problem','Why do people give up on planning meals, and what would make it faster and easier?'],['Key decision','Count how many participants mentioned each issue, so interview notes become a ranked list of priorities.'],['Outcome','Choosing meals was the top pain point (5 of 5). Four recommendations, from a one-tap menu builder to cooking from what you already have.']];
+PROJECTS.lunchbox.related=['research','Meal Planning Research','Interviews about why people skip meal planning, the same problem Lunchbox solves with a one-tap weekly plan.'];
+PROJECTS.research.related=['lunchbox','Lunchbox','An app that puts the one-tap weekly plan idea into a tested, hi-fi prototype.'];
+var ORDER=['lunchbox','research','trove','veggiebites','newglow'];
+var ALL=['modulo'].concat(ORDER);
+var PEEK={modulo:'mo-ios-home|Capstone · 3 platforms',lunchbox:'lb-v2-today|Mobile app · 5 usability tests',research:'re-themes|UX research · 5 interviews'};
+
+function peek(k){var p=PROJECTS[k],a=PEEK[k].split('|');return '<a href="#'+k+'" style="--c:'+p.c+';--ct:'+p.ct+'">'+im(a[0],p.name+' preview')+'<div><small>'+a[1].split(' · ')[0]+'</small><b>'+p.name+'</b><span>'+a[1].split(' · ')[1]+'</span></div></a>';}
+
+function home(){
+  return '<section class="hero"><div><div class="kicker">UX/UI designer · Portfolio 2026</div>'+
+  '<h1>Ex-architect turned <em>UX designer.</em> I design how people <span>move through products.</span></h1>'+
+  '<p class="lead">I turn user research into clear, friendly interfaces, from interviews and testing to high-fidelity prototypes. Before UX I was an architect at an interior design firm, so I think in flows, space and constraints.</p>'+
+  '<div class="row"><a class="btn" href="#modulo">See my capstone</a>'+resumeBtn()+linkedinBtn()+'<a class="btn text" href="#contact">Email me</a></div>'+
+  '<div class="avail"><i></i>Open to entry-level UX, product and UI/UX design roles</div>'+
+  '<div class="proof"><div><b>6</b><span>case studies</span></div><div><b>8</b><span>user interviews</span></div><div><b>8</b><span>usability testers</span></div><div><b>3</b><span>platforms designed</span></div></div></div>'+
+  '<div class="portrait"><img src="'+IMG['harini-hero']+'" alt="Portrait of Harini Kailasam" width="680" height="850"></div></section>'+
+  '<section class="peek" aria-label="Featured projects">'+['modulo','lunchbox','research'].map(peek).join('')+'</section>'+
+  '<section class="block" id="work" style="padding-top:28px"><div class="sec-head"><h2>Selected work</h2><p>Research-led projects across e-commerce, productivity, wellness and food.</p></div>'+
+  '<a class="feature" href="#modulo"><div class="txt"><span class="tag">Capstone · Full case study</span><h3>Modulo</h3><p>'+PROJECTS.modulo.lead+'</p><span class="go">Read the full story →</span></div><div class="art">'+im('mo-ios-home','Modulo iOS home screen')+im('mo-ios-cart','Modulo iOS cart')+'</div></a>'+
+  '<div class="sec-head" style="margin-top:56px"><h2>More projects</h2><p>Each one opens with the problem, my key decision and the outcome.</p></div>'+
+  '<div class="grid g5">'+ORDER.map(card).join('')+'</div></section>'+
+  '<section class="block"><div class="strip"><div><h2>Curious about the person behind the screens?</h2><p>I trained at TripleTen after working as an architect. I am looking for an entry-level UX or product design role on a collaborative team.</p><div class="row" style="margin-top:22px"><a class="btn" href="#about" style="margin-top:0">About me</a></div></div>'+
+  '<div><h3 class="mini">From architecture to UX</h3><div class="map"><div class="pair"><span>Space planning</span><i>→</i><span>User flows</span></div><div class="pair"><span>Client briefs</span><i>→</i><span>Research questions</span></div><div class="pair"><span>Drawing sets</span><i>→</i><span>Design systems</span></div></div></div></div></section>';
+}
+
+function about(){
+  return '<section class="about"><div class="portrait" style="width:min(100%,360px)"><img src="'+IMG['harini']+'" alt="Portrait of Harini Kailasam" width="900" height="1125"></div><div>'+
+  '<div class="kicker">About</div><h1>Curious about people, careful about details.</h1>'+
+  '<p>I am a UX/UI designer, trained at TripleTen, and before that an architect at an interior design firm. There I learned how layout, light and flow shape how people feel in a space. I now apply the same thinking to screens.</p>'+
+  '<p>As a kid I was always watching how people used things and sketching better ways to do simple tasks. Design lets me do that on purpose: ask people what is hard, then make it easier.</p>'+
+  '<p>I am looking for a UX, product or UI/UX designer role on a collaborative team, working on problems real users have, in areas like health, education, e-commerce and fintech.</p>'+
+  '<div class="facts"><div><h3>From architecture to UX</h3><div class="map" style="margin-top:12px"><div class="pair"><span>Space planning</span><i>→</i><span>User flows and navigation</span></div><div class="pair"><span>Client briefs and site constraints</span><i>→</i><span>Research questions and scoping</span></div><div class="pair"><span>Detailed drawing sets</span><i>→</i><span>Component libraries and design systems</span></div></div></div>'+
+  '<div><h3>How I work</h3><div class="tools"><span class="chip">Research</span><span class="chip sage">Personas and journeys</span><span class="chip lav">User flows</span><span class="chip sun">Wireframes</span><span class="chip blue">Hi-fi prototypes</span><span class="chip">Usability tests</span></div></div>'+
+  '<div><h3>Tools</h3><div class="tools"><span class="chip">Figma</span><span class="chip sage">FigJam</span><span class="chip lav">Figma Slides</span></div></div></div>'+
+  '<div class="row" style="margin-top:30px"><a class="btn" href="#contact">Get in touch</a>'+resumeBtn()+'<a class="btn ghost" href="#work">View my work</a></div></div></section>';
+}
+
+function resume(){
+  function proj(n,t,tag,items){return '<div class="job"><b>'+n+(t?' · '+t:'')+'</b><small>'+tag+'</small><ul>'+items.map(function(i){return '<li>'+i+'</li>';}).join('')+'</ul></div>';}
+  return '<section class="resume"><div class="role">Entry-level UX/UI designer</div><h1>Harini Kailasam</h1>'+
+  '<p style="color:var(--muted)">Dublin, CA · '+EMAIL+' · <a href="'+LINKS.linkedin+'" target="_blank" rel="noopener">linkedin.com/in/harinikailasam</a> · No visa sponsorship required</p>'+
+  '<h2>Profile</h2><p>Entry-level UX/UI designer and former architect who turns user research into clear, tested interfaces. Trained in UX/UI design at TripleTen and built six research-led case studies across e-commerce, productivity, wellness and food, backed by 8 user interviews and 8 usability tests. Brings an architect’s eye for flow, constraints and detail to a collaborative product team.</p>'+
+  '<h2>Projects</h2>'+
+  proj('Modulo','furniture e-commerce','Capstone · iOS, mobile web, desktop web',['Interviewed 3 shoppers and reviewed 3 competitors; turned findings into a persona, journey map and user flows.','Tested with 3 users and turned every finding into a change: earlier shipping estimates, clearer material details, a more prominent AR button.','Built one shared UI library across all three platforms.'])+
+  proj('Lunchbox','lunch-packing to-do app','iOS app',['Scored 5 feature ideas with a WSJF matrix and built the app around the top scorer, a one-tap Smart Weekly Plan.','Tested with 5 participants and shipped a second version that addressed every finding.'])+
+  proj('Meal Planning Research','','UX research',['Ran 5 interviews with thematic analysis: choosing meals was the top pain point (5 of 5), then lack of time (4 of 5).','Recommended four ideas, including an Auto Menu Builder and a curated “Pick for me” option.'])+
+  proj('Trove','second-hand marketplace','iOS app',['Designed a five-screen buying flow and a mini design system of eight components.','Measured the brand orange at about 2.5:1 contrast, darkened it to meet WCAG AA, and updated every screen.'])+
+  '<p>Also: New Glow, skincare app (visual direction, hi-fi prototype) · Veggie Bites, responsive recipe blog (type scale, style guide)</p>'+
+  '<h2>Experience</h2><div class="job"><b>Career break · Relocation</b><small>2022 to 2025</small><ul><li>Refreshed my skills through full-time UX training and built a portfolio of six case studies.</li></ul></div>'+
+  '<div class="job"><b>Architect · Ocean Interiors, India</b><small>2017 to 2018</small><ul><li>Supported architectural planning and interior design execution on the Swiss Re project.</li><li>Collaborated with architects to determine space goals and requirements.</li><li>Coordinated site work with contractors and the design team to keep execution on schedule.</li><li>Developed color, layout and furniture selections for visually cohesive environments.</li></ul></div>'+
+  '<h2>Education</h2><div class="job"><b>UX/UI Design Certificate · TripleTen</b><small>Oct 2026 · 10 months</small></div><div class="job"><b>UX Design Certification · Springboard</b><small>2021 to 2022</small></div><div class="job"><b>Bachelor’s Degree in Architecture · Karpagam University</b><small>2011 to 2016</small></div>'+
+  '<h2>Skills</h2><div class="two"><div><b>Research</b><p>User interviews, thematic analysis, competitor analysis, personas, journey maps, usability testing</p></div><div><b>Design</b><p>User flows, wireframes, hi-fi prototyping, design systems, responsive design, WCAG accessibility, WSJF prioritization</p></div></div><p><b>Tools</b><br>Figma (primary), FigJam, Figma Slides, InVision, Photoshop, Illustrator, Lightroom, AutoCAD</p>'+
+  '<div class="row" style="margin-top:28px"><a class="btn" href="#contact">Get in touch</a><a class="btn ghost" href="#work">View my work</a></div></section>';
+}
+
+function contact(){
+  return '<section class="contact"><div><div class="kicker">Contact</div><h1>Let’s make something easy to use.</h1><p style="font-size:20px;color:var(--muted)">I am open to entry-level UX, product and UI/UX design roles, internships and portfolio reviews. The best way to reach me is email.</p><div class="avail"><i></i>Available for new roles</div></div>'+
+  '<div class="mailbox"><b style="font:700 12px var(--body);letter-spacing:.14em;text-transform:uppercase">Email me</b><code id="em">'+EMAIL+'</code><div class="row"><a class="btn" href="mailto:'+EMAIL+'">Open in mail app</a><button class="btn ghost" id="copy" type="button">Copy address</button></div><p id="msg" role="status" aria-live="polite"></p><div class="row">'+resumeBtn('sm')+linkedinBtn('sm')+'</div></div></section>';
+}
+
+function caseStudy(k){
+  var p=PROJECTS[k];
+  var multi=p.cover.length>1;
+  var cover='<div class="cover'+(multi?' multi':'')+'">'+p.cover.map(function(c){var a=c.split('|');var d=IMGDIM[a[0]]||[1,1];var st=a[2];if(multi){var hm=/height:(\d+)px/.exec(st),wm=/width:min\(100%,(\d+)px\)/.exec(st);st=hm?'--w:'+Math.round(hm[1]*d[0]/d[1])+'px':(wm?'--w:'+wm[1]+'px':'');}return '<img src="'+IMG[a[0]]+'" alt="'+a[1]+'" width="'+d[0]+'" height="'+d[1]+'" style="'+st+';--ar:'+(d[0]/d[1]).toFixed(3)+'">';}).join('')+'</div><p class="hint">Tip: click or tap any image to enlarge it.</p>';
+  var ix=ALL.indexOf(k),nxt=[ALL[(ix+1)%ALL.length],ALL[(ix+2)%ALL.length]];var nx=nxt.map(function(n,i){return '<a href="#'+n+'" style="--c:'+PROJECTS[n].c+'"><small>'+(i?'Then':'Next project')+'</small><b>'+PROJECTS[n].name+'</b></a>';}).join('');
+  var meta=p.meta.slice();if(LINKS.timeline[k])meta.push(['Timeline',LINKS.timeline[k]]);
+  var gl='<section class="glance" aria-label="At a glance">'+p.glance.map(function(g){return '<div><b>'+g[0]+'</b><p>'+g[1]+'</p></div>';}).join('')+'</section>';
+  var acts='';
+  if(LINKS.proto[k])acts+='<a class="btn" href="'+LINKS.proto[k]+'" target="_blank" rel="noopener">View prototype ↗</a>';
+  if(p.related){var r=PROJECTS[p.related[0]];acts+='<a class="rel" href="#'+p.related[0]+'" style="--c:'+r.c+'"><small>Related project</small><b>'+p.related[1]+'</b><span>'+p.related[2]+'</span></a>';}
+  if(acts)acts='<div class="acts">'+acts+'</div>';
+  return '<div style="--c:'+p.c+';--ct:'+p.ct+'"><section class="cs-hero"><a class="back" href="#work">← All work</a><div class="kicker">'+p.tag+'</div><h1>'+p.name+'</h1><p class="lead">'+p.lead+'</p>'+gl+acts+
+  '<div class="meta">'+meta.map(function(m){return '<div><b>'+m[0]+'</b><span>'+m[1]+'</span></div>';}).join('')+'</div>'+cover+'</section>'+p.body()+'<div class="pager">'+nx+'</div></div>';
+}
+
+function groupDetails(){
+  var app=document.getElementById('app');
+  var ds=[].slice.call(app.querySelectorAll('.step[data-d]')),i=0;
+  while(i<ds.length){
+    var grp=[ds[i]];
+    while(ds[i+1]&&grp[grp.length-1].nextElementSibling===ds[i+1]){grp.push(ds[++i]);}
+    i++;
+    var det=document.createElement('details');det.className='more';
+    var labels=grp.map(function(g){return g.getAttribute('data-d');});
+    var s=document.createElement('summary');
+    s.innerHTML='<span><b>'+(grp.length>1?'Process details':labels[0])+'</b>'+(grp.length>1?labels.join(' · '):'Full breakdown and screens')+'</span><i></i>';
+    det.appendChild(s);
+    grp[0].parentNode.insertBefore(det,grp[0]);
+    grp.forEach(function(g){det.appendChild(g);});
+  }
+}
+function setMeta(desc,title){
+  var m=document.querySelector('meta[name=description]');if(m)m.setAttribute('content',desc);
+  var o=document.querySelector('meta[property="og:title"]');if(o)o.setAttribute('content',title);
+}
+
+var TITLES={home:'Harini Kailasam · UX/UI Designer Portfolio',about:'About · Harini Kailasam',contact:'Contact · Harini Kailasam'};
+function route(){
+  var h=(location.hash||'#home').slice(1)||'home', app=document.getElementById('app'), nav='';
+  if(PROJECTS[h]){app.innerHTML=caseStudy(h);groupDetails();document.title=PROJECTS[h].name+' · Harini Kailasam';nav='work';setMeta(PROJECTS[h].lead,PROJECTS[h].name+' · Harini Kailasam');}
+  else if(h==='about'){app.innerHTML=about();document.title=TITLES.about;nav='about';setMeta('About Harini Kailasam: a UX/UI designer and former architect who designs how people move through products.',TITLES.about);}
+  else if(h==='resume'){app.innerHTML=resume();document.title='Resume · Harini Kailasam';nav='';setMeta('Resume of Harini Kailasam, entry-level UX/UI designer and former architect.','Resume · Harini Kailasam');}
+  else if(h==='contact'){app.innerHTML=contact();document.title=TITLES.contact;nav='contact';setMeta('Contact Harini Kailasam about entry-level UX, product and UI/UX design roles, internships and portfolio reviews.',TITLES.contact);
+    document.getElementById('copy').onclick=function(){var m=document.getElementById('msg');
+      function ok(){m.textContent='Copied. You can paste it into your email app.';}
+      function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('em'));var s=getSelection();s.removeAllRanges();s.addRange(r);m.textContent='Address selected. Press copy on your device.';}
+      try{navigator.clipboard.writeText(EMAIL).then(ok,sel);}catch(e){sel();}};}
+  else{app.innerHTML=home();document.title=TITLES.home;nav=(h==='work')?'work':'';setMeta('Harini Kailasam is an ex-architect turned UX/UI designer. Research-led case studies across e-commerce, productivity, wellness and food.','Harini Kailasam · Ex-architect turned UX designer');}
+  document.querySelectorAll('[data-nav]').forEach(function(a){if(a.dataset.nav===nav)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+  if(h==='work'){var w=document.getElementById('work');if(w)w.scrollIntoView();}else window.scrollTo(0,0);
+}
+
+(function(){var lb=document.getElementById('lb'),im=document.getElementById('lbimg'),cap=document.getElementById('lbcap'),last=null;
+function close(){lb.hidden=true;im.removeAttribute('src');document.body.style.overflow='';if(last)try{last.focus()}catch(e){}}
+document.addEventListener('click',function(e){var a=e.target;
+  if(a.closest&&a.closest('#lb')){if(a===im){im.classList.toggle('fit');}if(a.id==='lbx'||a.className==='stage'||a.className==='lb')close();return;}
+  if(a.tagName==='IMG'&&a.closest('.fig,.phones,.cover')){e.preventDefault();last=document.activeElement;im.src=a.src;im.alt=a.alt;cap.textContent=a.alt;im.classList.add('fit');lb.hidden=false;document.body.style.overflow='hidden';document.getElementById('lbx').focus();}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)close();});
+window.addEventListener('hashchange',function(){if(!lb.hidden)close();});})();
+window.addEventListener('hashchange',route);route();
+(function(){var a=document.getElementById('navResume');if(!a)return;if(LINKS.resume){a.href=resumeHref();if(PDFOK){a.target='_blank';a.rel='noopener';}}else{a.href='mailto:'+EMAIL+'?subject=Resume%20request';a.textContent='Request resume';}})();
+document.getElementById('theme').onclick=function(){var r=document.documentElement,d=r.getAttribute('data-theme');
+  var dark=d?d==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.setAttribute('data-theme',dark?'light':'dark');};
+</script>
+
+</body></html>
